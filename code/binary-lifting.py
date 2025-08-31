@@ -1,6 +1,11 @@
 
 # binary lifting technique
 
+arr = [1, 3, 8, 2, 9, 2, 5, 6]
+arr.sort()
+
+print(arr)
+
 def binary_search(arr, x):
     n = len(arr)
     k = 0
@@ -13,3 +18,5 @@ def binary_search(arr, x):
     if arr[k] == x:
         return k
     return -1
+
+print(binary_search(arr, 5))
